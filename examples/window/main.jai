@@ -1,4 +1,4 @@
-GLFW :: #import "GLFW";
+GLFW :: #import,file "../../module.jai";
 #import "Basic";
 #import "GL";
 

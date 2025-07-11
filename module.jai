@@ -48,7 +48,7 @@ get_frame_buffer_size :: (window: *Window, width: *s32, height: *s32) #foreign "
 #import "Basic";
 
 #if OS == .MACOS {
-    glfw :: #system_library "libglfw.3";
+    glfw :: #library "macos/libglfw.3";
 }
 
 glfwCreateWindow :: (width: s32, height: s32, title: *u8, monitor: *Monitor, share: *Window) -> *Window #foreign glfw;
