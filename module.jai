@@ -90,6 +90,10 @@ set_window_should_close :: (
     value: int
 ) #foreign "glfwSetWindowShouldClose";
 
+get_proc_address :: (
+    proc_name: *u8
+) -> *void #foreign glfw "glfwGetProcAddress";
+
 #scope_file;
 
 #import "Basic";
